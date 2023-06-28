@@ -96,7 +96,7 @@ export const config: Options.Testrunner = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'http://localhost:3001',
+  baseUrl: 'https://www.c-and-a.com/es/es/shop',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
