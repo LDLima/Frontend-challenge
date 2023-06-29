@@ -8,7 +8,7 @@ export enum InfoData {
    * For your tests to work, define in the variables below, the desired info for the sucCess case.
    * For the other scenarios, is not required.
    */
-  SUCCESS_EMAIL = 'TestOP+7@gmail.com', // IT'S REQUIRED TO CHANGE! WITH THE CURRENT EMAIL, WILL ONLY EXECUTE AND BE CORRECT IN THE FIRST RUN
+  SUCCESS_EMAIL = 'TestOP+9@gmail.com', // IT'S REQUIRED TO CHANGE! WITH THE CURRENT EMAIL, WILL ONLY EXECUTE AND BE CORRECT IN THE FIRST RUN
   SUCCESS_PASS = 'Test12345*',
   INCORRECT_EMAIL = 'opTestInmail.com',
   INCORRECT_PASS = 'test12345',

@@ -1,11 +1,11 @@
-import { IRegisterSteps } from '../interfaces/steps/IRegisterSteps.ts'
-import { IHomeSteps } from '../interfaces/steps/IHomeSteps.ts'
 import { ErrorMessage } from '../helpers/enum/errorMessage.ts'
 import { IDashboardSteps } from '../interfaces/steps/iDashboardSteps.ts'
 import { SuccessMessage } from '../helpers/enum/successMessage.ts'
 import { HomePageSteps } from '../web/steps/home-page-steps.ts'
 import { RegistrationPageSteps } from '../web/steps/register-page-steps.ts'
 import { DashboardPageSteps } from '../web/steps/dashboard-page-steps.ts'
+import { IHomeSteps } from '../interfaces/steps/iHomeSteps.ts'
+import { IRegisterSteps } from '../interfaces/steps/iRegisterSteps.ts'
 
 describe('Creating account in C&A website Spain', () => {
   let homeSteps: IHomeSteps

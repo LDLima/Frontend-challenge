@@ -1,7 +1,9 @@
 import { InfoData } from '../../helpers/enumData/infoData.ts'
-import { IHomePage } from '../../interfaces/pages/iHomePage.ts'
+import { BasePage } from './base-page.ts'
 
-export class HomePage implements IHomePage {
+export class HomePage extends BasePage {
+  protected pageLoadLocator: '[data-qa="HeaderAccountButton"]'
+
   private get allowCookies() {
     return $('//button[@id="onetrust-accept-btn-handler"]')
   }
