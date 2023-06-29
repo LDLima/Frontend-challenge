@@ -1,4 +1,4 @@
-import { IHomePage } from '../interfaces/iHomePage.ts'
+import { IHomePage } from '../interfaces/pages/iHomePage.ts'
 import { HomePage } from '../web/pageObjects/home-page.ts'
 
 describe('Login account in C&A website Spain', () => {

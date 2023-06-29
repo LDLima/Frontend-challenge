@@ -1,7 +1,11 @@
-import { InfoData } from '../../helpers/enumData/infoData'
-import { IHomePage } from '../../interfaces/iHomePage'
+import { InfoData } from '../../helpers/enumData/infoData.ts'
+import { IHomePage } from '../../interfaces/pages/iHomePage.ts'
 
 export class HomePage implements IHomePage {
+  private get allowCookies() {
+    return $('//button[@id="onetrust-accept-btn-handler"]')
+  }
+
   private get btnHeaderAccount() {
     return $('[data-qa="HeaderAccountButton"]')
   }
@@ -46,6 +50,15 @@ export class HomePage implements IHomePage {
     return $('data-qa="IconEyeInactive"')
   }
 
+  // Methods
+  async openLoginSidebar(): Promise<void> {
+    await this.btnHeaderAccount.click()
+  }
+
+  async enterInRegisterAccountPage(): Promise<void> {
+    await this.btnRegisterAccount.click()
+  }
+
   async enterEmail(): Promise<void> {
     await this.btnHeaderAccount.click()
     await this.txtEmailLogin.setValue(InfoData.SUCCESS_EMAIL)
@@ -53,5 +66,10 @@ export class HomePage implements IHomePage {
 
   async login(): Promise<void> {
     await this.btnLogin.click()
+  }
+
+  async setAllowCookies(): Promise<void> {
+    await this.allowCookies.waitForClickable()
+    await this.allowCookies.click()
   }
 }
